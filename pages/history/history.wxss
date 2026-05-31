@@ -1,0 +1,73 @@
+.date-switch {
+  display: grid;
+  grid-template-columns: 168rpx 1fr 168rpx;
+  align-items: center;
+  gap: 16rpx;
+}
+
+.date-button {
+  min-height: 76rpx;
+  font-size: 26rpx;
+}
+
+.date-button[disabled] {
+  color: #a9b1ad;
+  background: #edf1ef;
+}
+
+.date-center {
+  min-width: 0;
+  text-align: center;
+}
+
+.day-summary {
+  padding: 28rpx;
+}
+
+.summary-count {
+  margin-top: 8rpx;
+  color: #1f2a28;
+  font-size: 56rpx;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.record-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18rpx;
+}
+
+.record-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24rpx;
+}
+
+.record-time {
+  color: #1f2a28;
+  font-size: 38rpx;
+  font-weight: 700;
+}
+
+.delete-button {
+  min-width: 112rpx;
+  height: 64rpx;
+  color: #cc5b49;
+  background: #ffe9e5;
+  border-radius: 10rpx;
+  font-size: 26rpx;
+  line-height: 64rpx;
+}
+
+.empty {
+  padding: 46rpx 28rpx;
+  text-align: center;
+}
+
+.empty-title {
+  color: #1f2a28;
+  font-size: 34rpx;
+  font-weight: 700;
+}

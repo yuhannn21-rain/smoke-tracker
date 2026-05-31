@@ -1,0 +1,67 @@
+.form {
+  overflow: hidden;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24rpx;
+  min-height: 118rpx;
+  padding: 0 28rpx;
+  border-bottom: 1rpx solid #edf1ef;
+}
+
+.form-row:last-child {
+  border-bottom: none;
+}
+
+.times-row {
+  align-items: flex-start;
+  padding-top: 24rpx;
+  padding-bottom: 24rpx;
+}
+
+.field-label {
+  color: #1f2a28;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.field-input,
+.time-input {
+  box-sizing: border-box;
+  min-height: 76rpx;
+  padding: 0 20rpx;
+  color: #1f2a28;
+  background: #eef3f1;
+  border-radius: 12rpx;
+  font-size: 30rpx;
+  text-align: right;
+}
+
+.field-input {
+  width: 190rpx;
+}
+
+.time-input {
+  width: 320rpx;
+}
+
+.save-button {
+  margin-top: 28rpx;
+}
+
+.privacy {
+  padding: 28rpx;
+}
+
+.privacy-title {
+  color: #1f2a28;
+  font-size: 34rpx;
+  font-weight: 800;
+}
+
+.clear-button {
+  margin-top: 24rpx;
+}

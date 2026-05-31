@@ -1,0 +1,42 @@
+<view class="page home-page">
+  <view class="hero panel">
+    <view class="eyebrow">{{todayDate}} · 今日</view>
+    <view class="count-line">
+      <text class="count">{{todayCount}}</text>
+      <text class="unit">支</text>
+    </view>
+    <view class="status {{statusClass}}">{{statusText}}</view>
+    <view class="progress">
+      <view class="progress-fill {{statusClass}}" style="width: {{progressPercent}}%;"></view>
+    </view>
+    <view class="hero-foot">
+      <view>
+        <view class="foot-label">每日目标</view>
+        <view class="foot-value">{{dailyTarget}} 支</view>
+      </view>
+      <view>
+        <view class="foot-label">剩余额度</view>
+        <view class="foot-value">{{remainingText}}</view>
+      </view>
+    </view>
+  </view>
+
+  <button class="primary-button record-button" bindtap="handleAddRecord">记一支</button>
+
+  <view class="section metric-row">
+    <view class="panel metric">
+      <view class="metric-label">比昨天</view>
+      <view class="metric-value">{{deltaText}}</view>
+    </view>
+    <view class="panel metric">
+      <view class="metric-label">今日花费</view>
+      <view class="metric-value">¥{{todayCost}}</view>
+    </view>
+  </view>
+
+  <view class="section panel insight">
+    <view class="insight-title">近 7 天均值</view>
+    <view class="insight-value">{{weeklyAverage}} 支/天</view>
+    <view class="subtle">{{weeklyMessage}}</view>
+  </view>
+</view>

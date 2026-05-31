@@ -1,0 +1,112 @@
+.hero {
+  padding: 36rpx;
+  background: linear-gradient(145deg, #ffffff 0%, #edf6f3 100%);
+}
+
+.count-line {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 28rpx;
+}
+
+.count {
+  color: #18211f;
+  font-size: 144rpx;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 0.9;
+}
+
+.unit {
+  margin: 0 0 14rpx 12rpx;
+  color: #4f5b56;
+  font-size: 34rpx;
+  font-weight: 700;
+}
+
+.status {
+  display: inline-flex;
+  margin-top: 30rpx;
+  padding: 12rpx 18rpx;
+  border-radius: 999rpx;
+  font-size: 26rpx;
+  font-weight: 700;
+}
+
+.status.safe {
+  color: #17655d;
+  background: #dff1ec;
+}
+
+.status.warn {
+  color: #8b5e13;
+  background: #fff1c7;
+}
+
+.status.over {
+  color: #9f3b2e;
+  background: #ffe2dc;
+}
+
+.progress {
+  height: 16rpx;
+  margin-top: 28rpx;
+  overflow: hidden;
+  border-radius: 999rpx;
+  background: #dfe7e3;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 999rpx;
+}
+
+.progress-fill.safe {
+  background: #1f7a70;
+}
+
+.progress-fill.warn {
+  background: #c28a21;
+}
+
+.progress-fill.over {
+  background: #cc5b49;
+}
+
+.hero-foot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 34rpx;
+}
+
+.foot-label {
+  color: #6e7771;
+  font-size: 24rpx;
+}
+
+.foot-value {
+  margin-top: 6rpx;
+  color: #1f2a28;
+  font-size: 34rpx;
+  font-weight: 700;
+}
+
+.record-button {
+  margin-top: 28rpx;
+}
+
+.insight {
+  padding: 28rpx;
+}
+
+.insight-title {
+  color: #6e7771;
+  font-size: 26rpx;
+}
+
+.insight-value {
+  margin: 8rpx 0;
+  color: #1f2a28;
+  font-size: 44rpx;
+  font-weight: 800;
+}

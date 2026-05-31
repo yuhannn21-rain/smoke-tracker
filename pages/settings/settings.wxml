@@ -1,0 +1,51 @@
+<view class="page settings-page">
+  <view class="panel form">
+    <view class="form-row">
+      <view>
+        <view class="field-label">每日目标</view>
+        <view class="subtle">单位：支</view>
+      </view>
+      <input class="field-input" type="number" value="{{form.dailyTarget}}" data-field="dailyTarget" bindinput="handleInput" />
+    </view>
+
+    <view class="form-row">
+      <view>
+        <view class="field-label">每包支数</view>
+        <view class="subtle">用于估算花费</view>
+      </view>
+      <input class="field-input" type="number" value="{{form.sticksPerPack}}" data-field="sticksPerPack" bindinput="handleInput" />
+    </view>
+
+    <view class="form-row">
+      <view>
+        <view class="field-label">每包价格</view>
+        <view class="subtle">单位：元</view>
+      </view>
+      <input class="field-input" type="digit" value="{{form.pricePerPack}}" data-field="pricePerPack" bindinput="handleInput" />
+    </view>
+
+    <view class="form-row">
+      <view>
+        <view class="field-label">提醒偏好</view>
+        <view class="subtle">保存时间，不申请通知权限</view>
+      </view>
+      <switch checked="{{form.reminderEnabled}}" color="#1f7a70" bindchange="handleReminderSwitch" />
+    </view>
+
+    <view class="form-row times-row" wx:if="{{form.reminderEnabled}}">
+      <view>
+        <view class="field-label">提醒时间</view>
+        <view class="subtle">用逗号分隔</view>
+      </view>
+      <input class="time-input" value="{{reminderTimesText}}" data-field="reminderTimes" bindinput="handleReminderTimes" />
+    </view>
+  </view>
+
+  <button class="primary-button save-button" bindtap="saveSettings">保存设置</button>
+
+  <view class="section panel privacy">
+    <view class="privacy-title">本地数据</view>
+    <view class="subtle">记录仅保存在当前微信客户端的本地存储中。</view>
+    <button class="danger-button clear-button" bindtap="confirmClear">清除全部数据</button>
+  </view>
+</view>
