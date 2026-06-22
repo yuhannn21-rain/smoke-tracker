@@ -1,0 +1,30 @@
+<view class="page history-page">
+  <view class="date-switch">
+    <button class="secondary-button date-button" bindtap="goPreviousDay">前一天</button>
+    <view class="date-center">
+      <view class="title">{{dateLabel}}</view>
+      <view class="subtle">{{selectedDate}}</view>
+    </view>
+    <button class="secondary-button date-button" bindtap="goNextDay" disabled="{{isToday}}">后一天</button>
+  </view>
+
+  <view class="section panel day-summary">
+    <view class="metric-label">当天记录</view>
+    <view class="summary-count">{{records.length}} 支</view>
+  </view>
+
+  <view class="section record-list" wx:if="{{records.length}}">
+    <view class="panel record-item" wx:for="{{records}}" wx:key="id">
+      <view>
+        <view class="record-time">{{item.time}}</view>
+        <view class="subtle">记录于 {{item.date}}</view>
+      </view>
+      <button class="delete-button" data-id="{{item.id}}" bindtap="confirmDelete">删除</button>
+    </view>
+  </view>
+
+  <view class="section panel empty" wx:else>
+    <view class="empty-title">这一天还没有记录</view>
+    <view class="subtle">回到“今日”页可以快速记一支。</view>
+  </view>
+</view>
